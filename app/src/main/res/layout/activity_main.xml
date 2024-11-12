@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+    <TimePicker
+        android:id="@+id/timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        />
+    <!--
+    timePickerMode clock spinner
+    -->
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"
+        android:calendarTextColor="#223344"
+        />
+    <Button
+        android:id="@+id/buttonWyswietl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="wyswietl"/>
+
+        <Button
+            android:id="@+id/buttonZegar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="wyswietl zegar"/>
+        <Button
+            android:id="@+id/buttonData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pokaz kalendarz"/>
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint = "wpisz jakiś tekst"
+            android:inputType="text"/>
+        <Button
+            android:id="@+id/buttonWyczysc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wyczyść"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
