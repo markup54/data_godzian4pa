@@ -109,10 +109,10 @@ public class MainActivity extends AppCompatActivity {
                                 editText.setText("");
                             }
                         }
-                )
-                alertDialog.show();
+                );
+                alertDialog.create();
 
-                )
+
             }
         });
     }
